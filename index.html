@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css" />
+
+<!--
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap" rel="stylesheet">
+  -->
+    <title>Sandrine Mestas Gleizes, Web CV</title>
+  </head>
+  <body>
+
+    <!-- Header et barre de navigation fixe-->
+    <header>
+        <logo></logo>
+        <nav>
+            <ul>
+                <li> <a href="#accueil" title="^ Retour vers le haut ^">Accueil</a></li> 
+                <li> <a href="#skills">Compétences</a></li>
+                <li> <a href="#projets">Projets</a></li>
+                <li> <a href="#contact" title="Écrivez-moi !">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section 1 accueil-->
+    <section id="accueil">
+        <div class="accueil">
+            <aside>
+                <div class="hello"><h1>Hello World ! </br>Je suis Sandrine Mestas</h1></div>
+                <div class="aspir"><h4>Aspirante <strong>Développeur Front-end</strong></h4></div>
+            </aside>
+            <img src="images/decoaccueil.png" alt="Random illustration du métier développeur front-end">
+        </div>
+    </section> 
+
+    <!-- Section 2 compétences, dit skills -->
+    <section id="skills">
+        <h2>Compétences</h2>
+            <figure>
+                <img src="images/cercleskills.png" alt="Auto-évaluation de compétences" title="C'est pas 100% accurate !" />
+            </figure>
+        <article>
+            <p>En suivant plusieurs cours et tutoriels en ligne, me voici riche de petites compétences.
+            Je suis différents cours sur <em><a href="https://openclassrooms.com">OpenClassrooms</a></em>,
+            mais aussi sur <em><a href="https://lms.fun-mooc.fr/courses/course-v1:ulb+44013+session05/progress">FunMooc</a></em>, 
+            je m’entraine sur <em><a href="https://www.sololearn.com/profile/17609367">Sololearn</a></em> et
+            sur <em><a href="http://www.france-ioi.org/user/perso.php?sLogin=supersand">ioi-France</a></em>.
+            </p>
+        </article>
+        <article>
+            <img src="images/autreslog.png" alt="Autres logiciels ou technologies plus ou moins maîtrisées" />
+        </article>
+    </section>
+
+    <!-- Section 3 projets -->
+    <section id="projets">
+        <div class="projets">
+            <h2>Projets</h2>
+                <div class="disproj">
+                    <article>
+                        <img src="images/projetwix.png" alt="Capture d'une portion d'écran du site vitrine conçu." />
+                    </article>
+                    <aside>
+                        <h4>Wix</h4>
+                        <p>Voici un <em><a href="https://sandrinemestas.wixsite.com/portfolioextracts">portfolio</a></em> créé sans code avec l’outils en ligne Wix.</p>
+                    </aside>
+                </div>    
+        </div>    
+    </section>
+    
+    <!-- Section 4 contact: mettre en place un formulaire -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <form action="traitement.php" method="post">
+            <div>
+                <input type="text" id="name" name="name" placeholder="John Doe">
+            </div>
+            <div>
+                <input type="email" id="mail" name="e-mail" placeholder="john.doe@supermail.com" required>
+            </div>
+            <div>
+                <textarea id="msg" name="user_message" required>Dites juste bonjour !</textarea>
+            </div>
+        </form>
+        <div class="button">
+            <button type="submit">Envoyer le message</button>
+        </div>
+            
+        <p><a href="mailto:sandrine.mestas@gmail.com" title="depuis votre logiciel de messagerie">Ou envoyez-moi un e-mail !</a></p>
+    </section>    
+
+    <!-- Footer -->
+    <footer>
+        <p>Version Web CV fev 2022, sandrine.mestas@gmail.com</p>
+    </footer>
+
+  </body>
+</html>

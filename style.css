@@ -1,0 +1,237 @@
+@font-face {
+    font-family: 'Pacifico';
+    src: url('polices/Pacifico-Regular.ttf');
+    src: url('polices/Pacifico-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'ZenKurenaido';
+    src: url('polices/ZenKurenaido-Regular.ttf');
+    src: url('polices/ZenKurenaido-Regular.ttf') format('truetype'),
+         url('polices/ZenKurenaido-Regular.eot') format('embedded-opentype'),
+         url('polices/ZenKurenaido-Regular.woff') format('woff');
+}
+
+body{
+    color: #172981;
+    background-color: rgba(252, 250, 235);
+}
+h1 { 
+    font-family: 'Pacifico', Impact, sans-serif ;
+    font-size: 64px ;
+}
+h2 {
+    font-family: 'Pacifico', Impact, sans-serif ;
+    font-size: 40px ;
+    text-align: center;
+    padding-bottom: 60px;
+}
+h4 {
+    font-family: 'ZenKurenaido', Verdana, sans-serif ;
+    font-size: 34px ;
+}
+p {
+    font-family: 'ZenKurenaido', Verdana, sans-serif ;
+    font-size: 20px ;
+}
+em{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+
+/* Apparence dynamique */
+a {
+    text-decoration: underline;
+    color:#172981;
+}    
+a:hover {
+   text-shadow: 1px 1px 2px #fcfaeb, 0 0 1em #CC9900, 0 0 0.2em blue;;
+}
+a:active {
+    background-color:#172981;
+    color:#CC9900; 
+}
+a:focus {
+    color: #CC9900;
+}
+section a:visited{
+    color: #0f1b5a;
+}
+
+/* header*/
+/* la barre nav du site*/
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 500px;
+    left: 300px;
+    height: 50px;
+    top: 5px;
+    background:  rgba(252, 250, 235, 0.53);
+    margin-left: 0px;
+    padding-left: 0px;
+}
+li 
+{
+    font-family: 'Pacifico', Impact, sans-serif ;
+    font-size: 26px ;
+    list-style-type:none;
+}
+li a{
+    text-decoration: none;
+}
+
+#accueil, #projets{
+    background-image: url("images/fondcopie.jpeg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding:60px;
+} 
+.projets, .accueil{
+    display:inline-block;
+    background-color: rgba(252, 250, 235);
+    border-radius: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+#projets h2{
+    padding-bottom: 0px;
+}
+#projets img, .accueil img{
+    border-radius: 40px;
+    max-width:100%;
+    overflow: hidden;
+}
+.disproj, .accueil{
+    display:flex;
+    flex-direction: row;
+}
+.hello{
+    overflow: visible;
+    display: inline;
+}
+#skills, #contact{
+    border: 3px solid #CC9900;
+    box-sizing: border-box;
+    border-radius: 40px;
+    padding-left: 200px;
+    padding-right: 200px;
+    margin: 60px;
+}
+#skills{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+figure{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
+    overflow: visible;
+}
+article{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 60px;
+}
+aside{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 60px;
+}
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#contact p{
+    text-align: center;
+}
+
+/* le formulaire de contact */
+form, div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form div, div{
+    margin-top: 10px;
+}  
+input, textarea {
+    font-family: 'ZenKurenaido', Verdana, sans-serif ;
+    font-size: 20px;
+    text-align: center;
+    color: #aaa;   
+    width: 400px;
+    border: 1px solid #172981;
+}
+input:focus, textarea:focus {
+    border-color: #CC9900;
+}
+textarea {
+    height: 150px;
+}
+button{
+    border: 3px solid #172981;
+    border-radius: 40px;
+    padding:5px 20px;
+    font-family: 'Pacifico', Impact, sans-serif ;
+    font-size: 20px ;
+    text-align: center;
+    color: #172981;
+    background: rgba(252, 250, 235);
+}
+button:hover {
+    text-shadow: 1px 1px 2px #fcfaeb, 0 0 1em #CC9900, 0 0 0.2em blue;
+}
+button:active {
+    background-color:#172981;
+    color:#CC9900; 
+}
+
+/* le footer */
+footer{
+    background: #172981;
+}
+footer p{
+    text-align: center;
+    color: rgba(252, 250, 235);
+}
+
+@media screen and (max-width:800px){
+    h1 { 
+        font-size:40px;
+    }
+    h2 {
+        font-size: 30px ;
+    }
+    h4 {
+        font-size: 25px ;
+    }
+    p {
+        font-size: 16px ;
+    }
+    em{
+        font-size: 18px;
+    }
+    ul {
+        left: auto;
+    }
+
+    #projets img, .accueil img{
+        display: none;
+    }
+}
